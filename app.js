@@ -8,9 +8,6 @@ const fizzBuzz = (number) => {
         const res = []
         if (i % 3 === 0) res.push('Fizz')
         if (i % 5 === 0) res.push('Buzz')
-        if (res.length > 0) console.log(res.join(""))
-        else console.log(i)
+        console.log(res.length > 0 ? res.join("") : i)
     }
 }
-
-fizzBuzz(15)
